@@ -1,0 +1,371 @@
+@colorLight:  #ffffff;
+
+@fontFamilyMain: 'Josefin Sans', sans-serif;
+@fontFamilySecondary: 'aleoregular';
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*,
+::before,
+::after {
+	padding: 0;
+	marging: 0;
+	box-sizing: border-box;
+	// border: 1px solid red;
+}
+.svgSprite {
+	width: 0;
+	height: 0;
+	display: none;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+	width: 100%;
+	padding: 15px;
+	background:@colorLight;
+	color: @colorLight;
+   	font: 400 16px/26px @fontFamilyMain;
+}
+
+.h1 {
+	font: 700 48px/26px @fontFamilyMain;
+	text-transform: uppercase;
+	// padding: 270px 0 18px 0;
+	margin: 0;
+}
+
+.h3 {
+	margin: 0;
+   	font: 400 36px/26px @fontFamilySecondary;
+}
+
+.h4 {
+  	font: 400 20px/26px @fontFamilyMain;
+	text-transform: uppercase;
+}
+
+.h5 {
+	font: 400 22px/26px @fontFamilyMain;
+	letter-spacing: 4px;
+	margin: 15px 0 45px 0;
+	padding: 0;
+}
+
+/*----------wrapp_header--------------*/
+.wrapp_header {
+	width: 1110px;
+	margin: 0 auto;
+	padding: 278px 0 0 0;
+}
+.header {
+	background: url(../img/bg1.jpg) center;
+	height: 740px;
+	background-size: cover;
+	text-align: center;
+}
+
+.search__form {
+	width: 650px;
+    height: 60px;
+    background: @colorLight;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.search__input {
+    width: 500px;
+    height: inherit;
+    border: none;
+    text-align: center;
+    border: 2px solid @colorLight;
+    letter-spacing: 2px;
+}
+
+.search__button {
+    width: 155px;
+    height: inherit;
+    background: #5474fd;
+    border: 2px solid @colorLight;
+    text-transform: uppercase;
+   	font: 400 14px/26px @fontFamilySecondary;
+}
+
+.fa-search {
+padding-left: 20px;
+}
+
+.ScrollDown {
+	margin: 115px 0 0 0;
+	font: 400 14px/26px @fontFamilyMain;
+    letter-spacing: 2px;
+}
+
+.scroll {
+	background: url(../img/scroll.png) no-repeat center;
+	width: 15px;
+	height: 10px;
+	margin: 6px auto;
+}
+
+.nav {
+	background: #5474fd;
+	height: 80px;
+	display: flex;
+	margin: 0;
+}
+
+.wrapp_nav {
+	width: 1110px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__mainLinks {
+	display: flex;
+    align-items: center;
+}
+
+.links {
+	text-decoration: none;
+   	font: 400 14px/26px @fontFamilySecondary;
+   	color: @colorLight;
+   	text-transform: uppercase;
+   	margin-left: 40px;
+   	line-height: 80px;
+   	vertical-align: center;
+}
+
+/*--------------section__why-----------------*/
+
+.section__why {
+	background: url(../img/bg2.jpg) center;
+	height: 685px;
+	background-size: cover;
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+}
+
+.why__description {
+	width: 555px;
+	padding-top: 205px;
+}
+
+.description-first {
+	margin: 65px 0 25px 0;
+}
+
+.description-second {
+	margin: 0 0 40px 0;
+}
+
+.button {
+    width: 225px;
+    height: 60px;
+    background: #5474fd;
+    text-transform: uppercase;
+   	font: 400 14px/26px @fontFamilySecondary;
+	border: none;
+    letter-spacing: 2px;
+}
+
+.why__foto {
+	width: 555px;
+	padding-top: 120px;
+}
+
+.why__foto-first {
+	float: right;
+	margin: 0 125px 5px 0;
+}
+
+.why__foto-second {
+	float: right;
+}
+
+/*-----------section__order-----------------*/
+
+.section__order {
+	background: #333333;
+	height: 335px;
+	display: flex;
+    align-items: flex-start;
+	justify-content: center;
+	padding-top: 100px;
+	position: relative;
+}
+
+.order_arc {
+	position: absolute;
+	background:url(../img/arc.png) center top;
+	top: 45px;
+	overflow: hidden;
+	width: 688px;
+	height: 62px;
+}
+
+.order {
+	width: 370px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.search_svg {
+	width: 58px;
+	height: 57px;
+	margin-bottom: 35px;
+}
+
+.select_svg {
+	width: 60px;
+	height: 61px;
+	margin-bottom: 35px;
+}
+
+.hand_svg {
+	width: 62px;
+	height: 59px;
+	margin-bottom: 35px;
+}
+
+/*---------------section__country1------------------*/
+.wrapp_country {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.section__country1 {
+	background: url(../img/bg3.jpg) center;
+	height: 700px;
+	background-size: cover;
+	padding-top: 230px;
+}
+
+.country__description {
+	background-color:  rgba(35, 35, 35, 0.9);
+	width: 540px;
+	height: 371px;
+	padding: 45px 30px;
+}
+
+.country__name {
+	font: 400 20px/26px @fontFamilyMain;
+}
+
+.country_description {
+	margin: 0 0 30px 0;
+}
+ /*-----------------section__country2---------------------*/
+
+.section__country2 {
+	background: url(../img/bg4.jpg)  center;
+	height: 700px;
+	background-size: cover;
+	padding-top: 230px;
+}
+.country__description-second {
+	float: right;
+}
+ /*--------------section__reviews------------------*/
+
+.section__reviews {
+	background: url(../img/bg5.jpg) center;
+	height: 730px;
+	background-size: cover;
+	padding-top: 120px;
+	text-align: center;
+}
+
+.wrapp_reviews {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.reviews__description {
+	text-align: left;
+	background: #333333;
+	padding-right: 56px;
+	margin: 100px 0 30px 0;
+   	font: 400 16px/26px @fontFamilyMain;
+}
+
+.reviews_foto {
+	float: left;
+	margin-right: 60px;
+}
+
+.reviews_h4 {
+	padding-top: 50px;
+}
+
+.reviews__arrows {
+	text-align: right;
+	font-size: 0;
+}
+
+.fa-quote-left {
+	color: #5474fd;
+	display: inline-block;
+	padding: 0 10px 0  0;
+}
+
+.arrows{
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	border: 1px solid @colorLight;
+	margin-left: 15px;
+}
+
+.arrows_left {
+	background: url(../img/left.png) no-repeat center;
+}
+
+.arrows_right {
+	background: url(../img/right.png) no-repeat center;
+}
+/*-----------------footer-----------------*/
+
+.footer {
+	background: #232323;
+	height: 270px;
+	text-align: center;
+	padding-top: 120px;
+}
+
+.footer_description {
+	margin: 5px 0 20px 0;
+}
+
+.social {
+	margin: 0 15px;
+}
+
+.fa-facebook-official,
+.fa-twitter,
+.fa-youtube-play,
+.fa-pinterest-p {
+	color: @colorLight;
+	margin: 0 10px;
+}
+
+.fa-linkedin-square {
+	margin: 0 10px;
+}
